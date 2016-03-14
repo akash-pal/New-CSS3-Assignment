@@ -1,0 +1,299 @@
+		/*=== font-face ===*/
+
+		@font-face 
+        {
+            font-family: testFont1;
+            src:url('../fonts/DJ-webfont.woff');
+        }
+        @font-face 
+        {
+            font-family: testFont2;
+            src:url('../fonts/Aaargh-webfont.woff');
+        }
+
+		/*=== title ===*/
+		#title{
+			font-family:testFont1;
+			text-align: center;
+			font-size:6em;
+			display: block;
+			vertical-align:baseline;
+			margin: 0;
+			padding: 0;
+			text-shadow: 10px 10px 20px #945414; 
+		}
+
+		/*== subtitle ===*/
+		#subtitle{
+			font-family:testFont1;
+			text-align: center;
+    		font-size:3em;
+    		color:#945414; 
+    		display: block;
+			vertical-align:baseline;
+			margin: 0;
+			margin-top: 10px;
+			padding: 0;
+		}
+
+		
+        /*=== body ===*/
+
+		body
+		{
+			background: linear-gradient(#00AAAA, #432000 50%);
+			line-height:1;
+		}
+
+		/*=== outerDiv ===*/
+		#content{
+			
+			width:46em;
+			padding:0;
+    		margin: auto;
+			background-color: white;
+			border-radius: 35px;
+			box-shadow:0px 0px 100px #255C7F,0px 0px 100px #255C7F;
+			position: relative;
+			
+		}
+
+		/*=== header ===*/
+		header{
+			background-color: #555555;
+			border-radius: 30px 30px 0px 0px;
+			color: #1E2832;	
+   			display: block;
+		}
+		
+
+		 /*===nav===*/
+		nav{
+			height: 40px;
+			background-color: #432100;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav a{
+             text-decoration: none;
+             color: #774B21;
+             font-family:testFont2;
+             font-size: 20px;
+             font-weight: bolder;
+             text-shadow: 0.16em 0.16em 0.16em #FFBB77;
+        }
+        nav ul li {
+            list-style-type: none;
+        }
+        nav ul > li {
+            display: inline-block;
+            width: 100px; 
+            padding-top: 10px;    
+        }
+     
+
+        /*=== section ===*/
+     
+
+		section {
+			position: 					absolute;
+		    background-color:               #fff;
+		    padding:                        1em;
+		    height:                         21em;
+    		width:                          44em;
+			border-radius:0px 0px 25px 25px;
+		}
+
+		/*=== z-index ===*/
+		#Intro {
+    		z-index:1;
+		}
+		#content>*:not(:target,#Intro){
+    		z-index:-1;
+		}
+		:target {
+    		z-index:2;    
+		}
+
+		/*=== footer ===*/
+		footer {
+	    position:                       relative;
+	    background-color:               #ffffff;
+	    padding-top:                    23em;
+		border-radius:0px 0px 30px 30px;
+		margin-top: 0;
+
+	
+		}
+		footer p {
+		    font-family:                    arial;
+		    font-size:                      0.75em;
+		    color:                          #0055aa;
+		    text-align:                     center;
+		}
+
+		/*=== about ===*/
+
+		#About header{
+			float: left;
+			background: #fff;
+		}
+		#About h1 {
+			font-family: testFont2;
+    		font-size:2em;
+    		color: #432100;
+    		margin:0px;
+    		text-shadow: 0.016em 0.016em 0.25em #AA5500;
+		}
+		#About h2 {
+			font-family: testFont2;
+    		font-size:1.5em;
+    		color: #432100;
+    		margin:0px;
+    		text-shadow: 0.016em 0.016em 0.25em #AA5500;
+		}
+
+		#About p{
+			color:#432100;
+			font-family: testFont2;
+			float: left;
+			margin-top: 0px;
+		}
+
+		/*=== about image ===*/
+		#imgDiv
+		{
+		    padding-top: 100px;
+		   
+    	}
+
+		#imgDiv img{
+			height:240px;
+			width:150px;
+			
+		}
+		#imgDiv2{
+			float: right;
+		    margin-top: -232px; 
+		    margin-right: -16px;
+		}
+		#imgDiv2 img{
+			height:240px;
+			width:400px;	
+		}
+
+		/*=== Intro ===*/
+
+		#Intro p{
+			color:#432100;
+			font-family: testFont2;
+			padding-left: 30px;
+		}
+
+		/*=== Contact ===*/
+
+		
+		#Contact p{
+			color:#432100;
+			font-family: testFont2;
+			text-align: center;
+		}
+	
+		/*=== Topics ===*/
+		#Topics p{
+			font-family: testFont2;
+			text-align: justify;
+			margin-top: 0px;
+		}
+		#Topics h2{
+			margin-top: 0px;
+			font-size: 30px;
+			font-family: testFont2;
+			text-align: left;
+			margin-bottom: 0px;
+			color: #432100;
+			text-shadow: 0.016em 0.016em 0.25em #AA5500;
+		}
+		#Topics ul {
+		   position: relative;	 
+		   height:9em;
+           width:98.5%;
+           margin: 0 auto;
+           margin-top:1em;
+		   
+		   font-family: testFont2;
+		   padding-left:0px;
+		   border-radius: 30px;
+		   box-shadow: 5px 5px 20px black;
+		 
+		  -webkit-column-count:3;
+		   column-count:3;
+
+		  -webkit-column-gap:0;
+		   column-gap:0;
+		}
+		#Topics li { 
+			 text-align: center;
+			 list-style-type: none;
+			 cursor:crosshair;
+		}
+
+		#Topics h1{
+			display: inline-block;
+			font-size: 16px;
+			height: 10px;
+			text-shadow: 0.016em 0.016em 0.25em #AA5500;
+		}
+
+
+
+
+		#Topics ul  li:first-of-type
+		{      
+            border-top-left-radius: 30px;
+        }
+        #Topics ul  li:last-of-type
+		{      
+            border-bottom-right-radius: 30px;
+        }
+        #Topics ul  li:nth-child(4)
+		{      
+            border-bottom-left-radius: 30px;
+        }
+        #Topics ul  li:nth-child(9)
+		{      
+            border-top-right-radius: 30px;
+        }
+        #Topics ul  li:nth-child(3n)
+		{      
+            background-color: #FFBB77;
+        }
+         #Topics ul  li:nth-child(3n+1)
+		{      
+            background-color: #FFEDDB;
+        }
+         #Topics ul  li:nth-child(3n+2)
+		{      
+            background-color: #FFD4A8;
+        }
+
+
+        /*=== hover ===*/
+        #Topics ul  li  p{
+        	display: none;
+        	position: absolute;
+            top:10em;   
+            left:2em;
+        }
+
+		#Topics ul  li:hover p{
+			display: inline-block;
+		}
+
+		#Topics ul  li:hover {
+			background-color: #432100;
+			color: #FFBB77;
+		}
+
+
